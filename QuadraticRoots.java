@@ -8,7 +8,7 @@ public class QuadraticRoots {
         System.out.println("Quadratic Equation Solver");
         System.out.println("Enter the coefficients of the quadratic equation (ax^2 + bx + c = 0):");
 
-        // Input coefficients from the user
+        //coefficients from the user
         System.out.print("Enter the value of a: ");
         double a = scanner.nextDouble();
 
@@ -18,10 +18,10 @@ public class QuadraticRoots {
         System.out.print("Enter the value of c: ");
         double c = scanner.nextDouble();
 
-        // Calculate the discriminant
+        //discriminant calculation
         double discrimi = b * b - 4 * a * c;
 
-        // Check the nature of roots
+        //nature of roots
         if (discrimi > 0) {
             double root1 = (-b + Math.sqrt(discrimi)) / (2 * a);
             double root2 = (-b - Math.sqrt(discrimi)) / (2 * a);
@@ -38,7 +38,7 @@ public class QuadraticRoots {
             System.out.println("Root 2: " + realPart + " - " + imaginaryPart + "i");
         }
 
-        // Close the scanner
+
         scanner.close();
     }
 }
