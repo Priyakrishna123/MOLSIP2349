@@ -5,14 +5,13 @@ class BankAccount {
     private String accountHolder;
     private double balance;
 
-    // Constructor
     public BankAccount(String accountNum, String accountHolder, double balance) {
         this.accountNum = accountNum;
         this.accountHolder = accountHolder;
         this.balance = balance;
     }
 
-    // Deposit method
+    // deposit method
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -22,7 +21,7 @@ class BankAccount {
         }
     }
 
-    // Withdrawal method
+    // withdrawal method
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -32,7 +31,7 @@ class BankAccount {
         }
     }
 
-    // Balance inquiry method
+    //inquiry method
     public void checkBalance() {
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Account Number: " + accountNum);
